@@ -6,26 +6,20 @@ def trim(s):
         return s
     while s[0] == ' ' and len(s) > 1:
         s = s[1:]
-        
+
     while s[-1] == ' ' and len(s) > 1:
         s = s[:-1]
-    
+
     if s == ' ':
-        s=''
+        s = ''
     return s
 
 
 def trim(s):
 
-    if s[-1:]==' ' :
-
+    if s[-1:] == ' ':
         return trim(s[:-1])
-
-    elif s[:1]==' ':
-
+    elif s[:1] == ' ':
         return trim(s[1:])
-
     else:
-
         return s
-
